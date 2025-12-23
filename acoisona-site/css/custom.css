@@ -1,0 +1,337 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* PLAYER FIXO */
+.radio-player {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    border-bottom: 2px solid #e60000;
+}
+
+/* MENU */
+.main-header {
+    margin-top: 80px;
+    background: #111;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px 0;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #e60000;
+}
+
+/* BOTÕES APP */
+.btn-app {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #e60000;
+    font-size: 13px;
+}
+
+.btn-app.ios {
+    background: #444;
+}
+
+/* CONTEÚDO */
+main {
+    margin-top: 40px;
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #222;
+}
+
+section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* RODAPÉ */
+.footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+/* LOGO PRINCIPAL */
+.logo-section {
+    margin-top: 80px; /* respeita o player fixo */
+    text-align: center;
+    padding: 40px 20px 20px;
+    background: radial-gradient(circle at top, #111, #000);
+}
+
+.logo-img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 20px rgba(230,0,0,0.6));
+}
+
+.logo-section h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.logo-section p {
+    font-size: 14px;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* ===== RODAPÉ FIXO ESTILO RÁDIO ===== */
+.radio-footer {
+    background: #000;
+    border-top: 2px solid #ffcc00;
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    min-width: 140px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    border-radius: 8px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
+}
+
+/* CORES POR REDE */
+.whatsapp { background: #25D366; }
+.youtube  { background: #FF0000; color: #fff; }
+.facebook { background: #1877F2; color: #fff; }
+.tiktok   { background: #ffffff; }
+
+/* TEXTO FINAL */
+.footer-copy {
+    color: #aaa;
+    font-size: 14px;
+}
+/* ===== BANNER PRINCIPAL ===== */
+.hero {
+    text-align: center;
+    padding: 40px 15px;
+    background: linear-gradient(180deg, #000 0%, #111 100%);
+}
+
+.hero-img {
+    max-width: 220px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #ccc;
+}
+/* Espaço para não ficar escondido atrás do player */
+main {
+    padding-top: 40px;
+}
+.hero {
+    position: relative;
+    z-index: 1;
+}
+.radio-player {
+    box-shadow: 0 4px 20px rgba(230,0,0,0.35);
+}
+.hero-img {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
+.radio-footer {
+    box-shadow: 0 -4px 20px rgba(255,204,0,0.2);
+}
+/* ===== QUEM SOMOS ===== */
+.quem-somos {
+    background: linear-gradient(180deg, #000 0%, #111 100%);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.quem-somos h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffcc00;
+    letter-spacing: 2px;
+}
+
+.quem-somos p {
+    max-width: 800px;
+    margin: 0 auto 18px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.quem-somos strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.quem-somos .chamada {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffcc00;
+    letter-spacing: 1px;
+}
+/* ===== CHAT & AGENDA ===== */
+.chat-agenda {
+    background: #000;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.chat-agenda h2 {
+    font-size: 32px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #ccc;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+/* GRID */
+.chat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* BOXES */
+.chat-box,
+.agenda-box {
+    background: #111;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #222;
+}
+
+.chat-box h3,
+.agenda-box h3 {
+    color: #e60000;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* AGENDA */
+.agenda-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.agenda-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+}
+
+.agenda-list strong {
+    color: #ffcc00;
+    margin-right: 6px;
+}
+
+.agenda-note {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #aaa;
+}
+

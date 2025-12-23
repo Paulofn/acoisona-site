@@ -1,0 +1,42 @@
+.main-header {
+    position: sticky;
+    top: 80px;
+    background: #0b0b0b;
+    z-index: 9998;
+    border-bottom: 2px solid #222;
+}
+
+.main-menu {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #f2ff00;
+}
+
+.btn-app {
+    padding: 8px 14px;
+    border: 2px solid #f2ff00;
+    border-radius: 4px;
+    color: #f2ff00;
+}
+
+.btn-app.ios {
+    border-color: #00c3ff;
+    color: #00c3ff;
+}
